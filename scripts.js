@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 productDiv.innerHTML = `
                     <div class="image-container">
                         <img src="${product.image}" alt="${product.name}" class="default-image">
-                        ${product.hoverImage ? `<img src="${product.hoverImage}" alt="${product.name}" class="hover-image">` : ''}
+                        <img src="${product.hoverImage}" alt="${product.name}" class="hover-image">
                     </div>
                     <h2>${product.name}</h2>
                     <p>Price: CHF${product.price}</p>
@@ -18,13 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
                 productsContainer.appendChild(productDiv);
 
-                // Ensure both images are always shown if hoverImage exists
+                // Ensure both images are always shown
                 const defaultImage = productDiv.querySelector('.default-image');
                 const hoverImage = productDiv.querySelector('.hover-image');
                 defaultImage.style.display = 'block';
-                if (hoverImage) {
-                    hoverImage.style.display = 'block';
-                }
+                hoverImage.style.display = 'block';
 
                 const addToCartButton = productDiv.querySelector('.add-to-cart');
                 addToCartButton.addEventListener('click', () => {
@@ -59,27 +57,30 @@ document.addEventListener('DOMContentLoaded', () => {
         cartItemsContainer.innerHTML = '';
         let total = 0;
         cartItems.forEach(item => {
-            const cartItemDiv = document.createElement('div');
-            cartItemDiv.className = 'cart-item';
-            cartItemDiv.innerHTML = `
-                <p>${item.name} - CHF${item.price}</p>
-                <button class="remove-from-cart" data-name="${item.name}">Remove</button>
-            `;
-            cartItemsContainer.appendChild(cartItemDiv);
-            total += item.price;
-
-            const removeFromCartButton = cartItemDiv.querySelector('.remove-from-cart');
-            removeFromCartButton.addEventListener('click', () => {
+            const cartItem = document.createElement('li');
+            cartItem.textContent = `${item.name} - CHF${item.price}`;
+            const removeButton = document.createElement('button');
+            removeButton.textContent = 'Remove';
+            removeButton.addEventListener('click', () => {
                 removeFromCart(item.name);
             });
+            cartItem.appendChild(removeButton);
+            cartItemsContainer.appendChild(cartItem);
         });
-        cartTotalElement.textContent = `Total: CHF${total.toFixed(2)}`;
+
+        total = cartItems.reduce((sum, item) => sum + item.price, 0);
+        cartTotalElement.textContent = total.toFixed(2);
     }
 
     function showNotification() {
         cartNotification.style.display = 'block';
         setTimeout(() => {
             cartNotification.style.display = 'none';
-        }, 2000);
+        }, 2000); // Hide after 2 seconds
     }
+
+    document.getElementById('cart-icon').addEventListener('click', function() {
+        var cart = document.getElementById('cart');
+        cart.classList.toggle('open');
+    });
 });
