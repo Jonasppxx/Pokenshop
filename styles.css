@@ -1,109 +1,142 @@
-/* Import Roboto and Open Sans fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap');
-
-body {
-    font-family: 'Montserrat', sans-serif; /* Change font family here */
-    background-color: #f0f2f5;
+/* Reset */
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    color: #333;
+    box-sizing: border-box;
 }
 
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+}
+
+/* Main Content */
 #main-content {
-    flex: 1;
-    padding: 40px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-h1 {
-    color: #333;
-    margin-top: 40px;
-    font-size: 2.5em;
-    font-weight: 500;
+#main-content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 #products {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
-    padding: 40px;
+    padding: 20px;
 }
 
 .product {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 64px; /* Increased padding */
-    margin: 10px; /* Increased margin */
-    text-align: center;
     background-color: #fff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-    width: 420px; /* Increased width */
-    height: 500px; /* Increased height */
-    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
 
 .product:hover {
     transform: translateY(-10px);
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.image-container {
+.product .image-container {
     display: flex;
-    justify-content: space-between; /* Distribute space between images */
-    align-items: center;
-    width: 100%; /* Ensure the container takes full width */
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
-.default-image, .hover-image {
-    max-width: 48%; /* Ensure images fit within the container */
+.product img {
+    width: 100px; /* Adjust the width as needed */
     height: auto;
-    border-radius: 4px;
-    cursor: pointer;
+    border-radius: 8px;
 }
 
 .product h2 {
     font-size: 1.5em;
-    margin: 20px 0;
-    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
 }
 
 .product p {
-    margin: 15px 0;
-    color: #666;
     font-size: 1em;
+    margin-bottom: 10px;
+    color: #666;
 }
 
 .add-to-cart {
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 20px 30px;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
     font-size: 1em;
     font-weight: 500;
+    transition: background-color 0.3s ease;
 }
 
 .add-to-cart:hover {
     background-color: #0056b3;
 }
 
+/* Cart Icon */
+#cart-icon {
+    font-size: 2.5em;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+#cart-icon:hover {
+    color: #0056b3;
+}
+
+/* Cart Notification */
+#cart-notification {
+    position: fixed;
+    top: 20px;
+    right: 80px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 500;
+    display: none;
+    z-index: 1000;
+}
+
+/* Cart */
 #cart {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 32px;
-    margin: 32px;
-    text-align: center;
     background-color: #fff;
+    padding: 32px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 360px;
-    position: sticky;
-    top: 40px;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100%;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+}
+
+#cart.open {
+    right: 0;
 }
 
 #cart h2 {
@@ -125,11 +158,12 @@ h1 {
     background-color: #dc3545;
     color: white;
     border: none;
-    padding: 15px 20px;
+    padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 0.9em;
     font-weight: 500;
+    transition: background-color 0.3s ease;
 }
 
 #cart-items button:hover {
@@ -140,98 +174,52 @@ h1 {
     font-weight: bold;
     color: #333;
     font-size: 1.2em;
+    margin-top: 20px;
 }
 
 #checkout-button {
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 20px 30px;
+    padding: 15px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
     font-size: 1em;
     font-weight: 500;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
 }
 
 #checkout-button:hover {
     background-color: #0056b3;
 }
 
-@media (max-width: 600px) {
-    body {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .product {
-        width: 100%;
-        margin: 20px 0;
-    }
-
-    #products {
-        padding: 20px;
-    }
-
-    #cart {
-        width: 100%;
-        margin: 20px 0;
-    }
+/* Payment Instructions */
+#payment-instructions {
+    margin-top: 20px;
 }
 
-/* Checkout form styles */
-#checkout-content {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 2rem;
-    margin: 2rem;
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+#payment-instructions h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#payment-instructions ol {
+    padding-left: 20px;
+}
+
+#payment-instructions li {
+    margin-bottom: 10px;
+}
+
+#payment-instructions strong {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#payment-instructions iframe {
     width: 100%;
-    max-width: 400px;
-}
-
-h2 {
-    color: #333;
-    margin-bottom: 1.5rem;
-    font-size: 2em;
-    font-weight: 500;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin: 0.5rem 0 0.25rem;
-    font-size: 1em;
-    font-weight: 500;
-    color: #666;
-}
-
-input {
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1em;
-    font-family: 'Roboto', 'Open Sans', sans-serif;
-}
-
-button[type="submit"] {
-    background-color: #007bff;
-    color: white;
+    height: 480px;
     border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: 500;
-    transition: background-color 0.2s;
-}
-
-button[type="submit"]:hover {
-    background-color: #0056b3;
+    margin-top: 10px;
 }
