@@ -223,32 +223,3 @@ body {
     border: none;
     margin-top: 10px;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    #products {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .product {
-        width: 90%;
-    }
-
-    #cart {
-        width: 100%;
-        right: -100%;
-    }
-
-    #cart.open {
-        right: 0;
-    }
-
-    #cart-icon {
-        font-size: 2em;
-    }
-
-    #cart-notification {
-        right: 20px;
-    }
-}
