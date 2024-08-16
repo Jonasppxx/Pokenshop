@@ -1,46 +1,18 @@
 {
     "products": [
         {
-            "name": "Machollo",
-            "price": 2.5,
-            "set": "2016",
-            "image": "images/IMG_7025 2023-11-12 13_01_27.png",
-            "hoverImage": "images/IMG_7026 2023-11-12 13_01_28.png"
+            "name": "meloetta-ex-rc25",
+            "set": "pokemon-legendary-treasures",
+            "price": 7.72,
+            "image": "images/meloetta-ex-rc25/IMG_6942 2023-11-12 12_59_59.JPG",
+            "hoverImage": "images/meloetta-ex-rc25/IMG_6943 2023-11-12 13_00_00.JPG"
         },
         {
-            "name": "Guardevoir",
-            "price": 5.4,
-            "set": "2018",
-            "image": "images/IMG_7036 2023-11-12 13_01_39.png",
-            "hoverImage": ""
-        },
-        {
-            "name": "Thundrus EX",
-            "price": 3.9,
-            "set": "2021",
-            "image": "images/IMG_7028 2023-11-12 13_01_31.png",
-            "hoverImage": "images/rare_candy_hover.png"
-        },
-        {
-            "name": "dsl\u00fckd",
-            "price": 12.0,
-            "set": "2023",
-            "image": "images/IMG_7028 2023-11-12 13_01_31.png",
-            "hoverImage": "images/rare_candy_hover.png"
-        },
-        {
-            "name": "Product1",
-            "price": 10.99,
-            "set": "2023",
-            "image": "images\\Product1\\rare_candy_hover.png",
-            "hoverImage": "images\\Product1\\rare_candy_hover.png"
-        },
-        {
-            "name": "Product2",
-            "price": 15.49,
-            "set": "2022",
-            "image": "images\\Product2\\rare_candy_hover.png",
-            "hoverImage": "images\\Product2\\rare_candy_hover.png"
+            "name": "reshiram-xy74",
+            "set": "pokemon-promo",
+            "price": 6.65,
+            "image": "images/reshiram-xy74/IMG_7010 2023-11-12 13_01_05.JPG",
+            "hoverImage": "images/reshiram-xy74/IMG_7011 2023-11-12 13_01_06.JPG"
         }
     ]
 }
