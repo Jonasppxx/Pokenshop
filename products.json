@@ -1,0 +1,445 @@
+{
+    "products": [
+        {
+            "name": "Machollo",
+            "price": 2.5,
+            "set": "2016",
+            "image": "images/IMG_7025 2023-11-12 13_01_27.png",
+            "hoverImage": "images/IMG_7026 2023-11-12 13_01_28.png"
+        },
+        {
+            "name": "Guardevoir",
+            "price": 5.4,
+            "set": "2018",
+            "image": "images/IMG_7036 2023-11-12 13_01_39.png",
+            "hoverImage": ""
+        },
+        {
+            "name": "Thundrus EX",
+            "price": 3.9,
+            "set": "2021",
+            "image": "images/IMG_7028 2023-11-12 13_01_31.png",
+            "hoverImage": "images/rare_candy_hover.png"
+        },
+        {
+            "name": "dsl\u00fckd",
+            "price": 12.0,
+            "set": "2023",
+            "image": "images/IMG_7028 2023-11-12 13_01_31.png",
+            "hoverImage": "images/rare_candy_hover.png"
+        },
+        {
+            "name": "Product1",
+            "price": 10.99,
+            "set": "2023",
+            "image": "images\\Product1\\rare_candy_hover.png",
+            "hoverImage": "images\\Product1\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product2",
+            "price": 15.49,
+            "set": "2022",
+            "image": "images\\Product2\\rare_candy_hover.png",
+            "hoverImage": "images\\Product2\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product1",
+            "price": 10.99,
+            "set": "2023",
+            "image": "images\\Product1\\rare_candy_hover.png",
+            "hoverImage": "images\\Product1\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product2",
+            "price": 15.49,
+            "set": "2022",
+            "image": "images\\Product2\\rare_candy_hover.png",
+            "hoverImage": "images\\Product2\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product1",
+            "price": 10.99,
+            "set": "2023",
+            "image": "images\\Product1\\rare_candy_hover.png",
+            "hoverImage": "images\\Product1\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product2",
+            "price": 15.49,
+            "set": "2022",
+            "image": "images\\Product2\\rare_candy_hover.png",
+            "hoverImage": "images\\Product2\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product3",
+            "price": 19.99,
+            "set": "2021",
+            "image": "images\\Product3\\rare_candy_hover.png",
+            "hoverImage": "images\\Product3\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product4",
+            "price": 24.49,
+            "set": "2020",
+            "image": "images\\Product4\\rare_candy_hover.png",
+            "hoverImage": "images\\Product4\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product5",
+            "price": 28.99,
+            "set": "2019",
+            "image": "images\\Product5\\rare_candy_hover.png",
+            "hoverImage": "images\\Product5\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product6",
+            "price": 33.49,
+            "set": "2018",
+            "image": "images\\Product6\\rare_candy_hover.png",
+            "hoverImage": "images\\Product6\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product7",
+            "price": 37.99,
+            "set": "2017",
+            "image": "images\\Product7\\rare_candy_hover.png",
+            "hoverImage": "images\\Product7\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product8",
+            "price": 42.49,
+            "set": "2016",
+            "image": "images\\Product8\\rare_candy_hover.png",
+            "hoverImage": "images\\Product8\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product9",
+            "price": 46.99,
+            "set": "2015",
+            "image": "images\\Product9\\rare_candy_hover.png",
+            "hoverImage": "images\\Product9\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product10",
+            "price": 51.49,
+            "set": "2014",
+            "image": "images\\Product10\\rare_candy_hover.png",
+            "hoverImage": "images\\Product10\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product11",
+            "price": 55.99,
+            "set": "2013",
+            "image": "images\\Product11\\rare_candy_hover.png",
+            "hoverImage": "images\\Product11\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product12",
+            "price": 60.49,
+            "set": "2012",
+            "image": "images\\Product12\\rare_candy_hover.png",
+            "hoverImage": "images\\Product12\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product13",
+            "price": 64.99,
+            "set": "2011",
+            "image": "images\\Product13\\rare_candy_hover.png",
+            "hoverImage": "images\\Product13\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product14",
+            "price": 69.49,
+            "set": "2010",
+            "image": "images\\Product14\\rare_candy_hover.png",
+            "hoverImage": "images\\Product14\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product15",
+            "price": 73.99,
+            "set": "2009",
+            "image": "images\\Product15\\rare_candy_hover.png",
+            "hoverImage": "images\\Product15\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product16",
+            "price": 78.49,
+            "set": "2008",
+            "image": "images\\Product16\\rare_candy_hover.png",
+            "hoverImage": "images\\Product16\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product17",
+            "price": 82.99,
+            "set": "2007",
+            "image": "images\\Product17\\rare_candy_hover.png",
+            "hoverImage": "images\\Product17\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product18",
+            "price": 87.49,
+            "set": "2006",
+            "image": "images\\Product18\\rare_candy_hover.png",
+            "hoverImage": "images\\Product18\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product19",
+            "price": 91.99,
+            "set": "2005",
+            "image": "images\\Product19\\rare_candy_hover.png",
+            "hoverImage": "images\\Product19\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product20",
+            "price": 96.49,
+            "set": "2004",
+            "image": "images\\Product20\\rare_candy_hover.png",
+            "hoverImage": "images\\Product20\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product21",
+            "price": 100.99,
+            "set": "2003",
+            "image": "images\\Product21\\rare_candy_hover.png",
+            "hoverImage": "images\\Product21\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product22",
+            "price": 105.49,
+            "set": "2002",
+            "image": "images\\Product22\\rare_candy_hover.png",
+            "hoverImage": "images\\Product22\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product23",
+            "price": 109.99,
+            "set": "2001",
+            "image": "images\\Product23\\rare_candy_hover.png",
+            "hoverImage": "images\\Product23\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product24",
+            "price": 114.49,
+            "set": "2000",
+            "image": "images\\Product24\\rare_candy_hover.png",
+            "hoverImage": "images\\Product24\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product25",
+            "price": 118.99,
+            "set": "1999",
+            "image": "images\\Product25\\rare_candy_hover.png",
+            "hoverImage": "images\\Product25\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product1",
+            "price": 10.99,
+            "set": "2023",
+            "image": "images\\Product1\\rare_candy_hover.png",
+            "hoverImage": "images\\Product1\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product2",
+            "price": 15.49,
+            "set": "2022",
+            "image": "images\\Product2\\rare_candy_hover.png",
+            "hoverImage": "images\\Product2\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product3",
+            "price": 19.99,
+            "set": "2021",
+            "image": "images\\Product3\\rare_candy_hover.png",
+            "hoverImage": "images\\Product3\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product4",
+            "price": 24.49,
+            "set": "2020",
+            "image": "images\\Product4\\rare_candy_hover.png",
+            "hoverImage": "images\\Product4\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product5",
+            "price": 28.99,
+            "set": "2019",
+            "image": "images\\Product5\\rare_candy_hover.png",
+            "hoverImage": "images\\Product5\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product6",
+            "price": 33.49,
+            "set": "2018",
+            "image": "images\\Product6\\rare_candy_hover.png",
+            "hoverImage": "images\\Product6\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product7",
+            "price": 37.99,
+            "set": "2017",
+            "image": "images\\Product7\\rare_candy_hover.png",
+            "hoverImage": "images\\Product7\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product8",
+            "price": 42.49,
+            "set": "2016",
+            "image": "images\\Product8\\rare_candy_hover.png",
+            "hoverImage": "images\\Product8\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product9",
+            "price": 46.99,
+            "set": "2015",
+            "image": "images\\Product9\\rare_candy_hover.png",
+            "hoverImage": "images\\Product9\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product10",
+            "price": 51.49,
+            "set": "2014",
+            "image": "images\\Product10\\rare_candy_hover.png",
+            "hoverImage": "images\\Product10\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product11",
+            "price": 55.99,
+            "set": "2013",
+            "image": "images\\Product11\\rare_candy_hover.png",
+            "hoverImage": "images\\Product11\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product12",
+            "price": 60.49,
+            "set": "2012",
+            "image": "images\\Product12\\rare_candy_hover.png",
+            "hoverImage": "images\\Product12\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product13",
+            "price": 64.99,
+            "set": "2011",
+            "image": "images\\Product13\\rare_candy_hover.png",
+            "hoverImage": "images\\Product13\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product14",
+            "price": 69.49,
+            "set": "2010",
+            "image": "images\\Product14\\rare_candy_hover.png",
+            "hoverImage": "images\\Product14\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product15",
+            "price": 73.99,
+            "set": "2009",
+            "image": "images\\Product15\\rare_candy_hover.png",
+            "hoverImage": "images\\Product15\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product16",
+            "price": 78.49,
+            "set": "2008",
+            "image": "images\\Product16\\rare_candy_hover.png",
+            "hoverImage": "images\\Product16\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product17",
+            "price": 82.99,
+            "set": "2007",
+            "image": "images\\Product17\\rare_candy_hover.png",
+            "hoverImage": "images\\Product17\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product18",
+            "price": 87.49,
+            "set": "2006",
+            "image": "images\\Product18\\rare_candy_hover.png",
+            "hoverImage": "images\\Product18\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product19",
+            "price": 91.99,
+            "set": "2005",
+            "image": "images\\Product19\\rare_candy_hover.png",
+            "hoverImage": "images\\Product19\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product20",
+            "price": 96.49,
+            "set": "2004",
+            "image": "images\\Product20\\rare_candy_hover.png",
+            "hoverImage": "images\\Product20\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product21",
+            "price": 100.99,
+            "set": "2003",
+            "image": "images\\Product21\\rare_candy_hover.png",
+            "hoverImage": "images\\Product21\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product22",
+            "price": 105.49,
+            "set": "2002",
+            "image": "images\\Product22\\rare_candy_hover.png",
+            "hoverImage": "images\\Product22\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product23",
+            "price": 109.99,
+            "set": "2001",
+            "image": "images\\Product23\\rare_candy_hover.png",
+            "hoverImage": "images\\Product23\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product24",
+            "price": 114.49,
+            "set": "2000",
+            "image": "images\\Product24\\rare_candy_hover.png",
+            "hoverImage": "images\\Product24\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product25",
+            "price": 118.99,
+            "set": "1999",
+            "image": "images\\Product25\\rare_candy_hover.png",
+            "hoverImage": "images\\Product25\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product26",
+            "price": 123.49,
+            "set": "1998",
+            "image": "images\\Product26\\rare_candy_hover.png",
+            "hoverImage": "images\\Product26\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product27",
+            "price": 127.99,
+            "set": "1997",
+            "image": "images\\Product27\\rare_candy_hover.png",
+            "hoverImage": "images\\Product27\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product28",
+            "price": 132.49,
+            "set": "1996",
+            "image": "images\\Product28\\rare_candy_hover.png",
+            "hoverImage": "images\\Product28\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product29",
+            "price": 136.99,
+            "set": "1995",
+            "image": "images\\Product29\\rare_candy_hover.png",
+            "hoverImage": "images\\Product29\\rare_candy_hover.png"
+        },
+        {
+            "name": "Product30",
+            "price": 141.49,
+            "set": "1994",
+            "image": "images\\Product30\\rare_candy_hover.png",
+            "hoverImage": "images\\Product30\\rare_candy_hover.png"
+        }
+    ]
+}
