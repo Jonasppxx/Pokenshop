@@ -14,19 +14,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h2>${product.name}</h2>
                     <p>Price: CHF${product.price}</p>
                     <p>${product.set}</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-cart" data-name="${product.name}">Add to Cart</button>
                 `;
                 productsContainer.appendChild(productDiv);
 
-                // Ensure both images are always shown
-                const defaultImage = productDiv.querySelector('.default-image');
-                const hoverImage = productDiv.querySelector('.hover-image');
-                defaultImage.style.display = 'block';
-                hoverImage.style.display = 'block';
-
                 const addToCartButton = productDiv.querySelector('.add-to-cart');
+                if (isInCart(product.name)) {
+                    addToCartButton.textContent = 'In Cart';
+                    addToCartButton.disabled = true;
+                }
+
                 addToCartButton.addEventListener('click', () => {
                     addToCart(product);
+                    addToCartButton.textContent = 'In Cart';
+                    addToCartButton.disabled = true;
                 });
             });
         })
@@ -37,8 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const cartTotalElement = document.getElementById('cart-total');
     const cartNotification = document.getElementById('cart-notification');
 
+    function isInCart(productName) {
+        return cartItems.some(item => item.name === productName);
+    }
+
     function addToCart(product) {
-        if (!cartItems.some(item => item.name === product.name)) {
+        if (!isInCart(product.name)) {
             cartItems.push(product);
             updateCart();
             showNotification();
@@ -50,6 +55,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (index !== -1) {
             cartItems.splice(index, 1);
             updateCart();
+            const addToCartButton = document.querySelector(`.product button[data-name="${productName}"]`);
+            if (addToCartButton) {
+                addToCartButton.textContent = 'Add to Cart';
+                addToCartButton.disabled = false;
+            }
         }
     }
 

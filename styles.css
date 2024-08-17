@@ -13,6 +13,7 @@ body {
     padding: 20px;
 }
 
+
 /* Main Content */
 #main-content {
     margin-bottom: 20px;
@@ -188,6 +189,15 @@ body {
     font-weight: 500;
     margin-top: 20px;
     transition: background-color 0.3s ease;
+}
+
+/* Impressum */
+#impressum {
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    text-align: center; /* Zentriert den Text */
 }
 
 #checkout-button:hover {
