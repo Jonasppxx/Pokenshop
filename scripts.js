@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <img src="${product.hoverImage}" alt="${product.name}" class="hover-image">
                     </div>
                     <h2>${product.name}</h2>
-                    <p>Price: CHF${product.price}</p>
+                    <p class="product-price">Price: CHF${product.price}</p>
                     <p>${product.set}</p>
                     <button class="add-to-cart" data-name="${product.name}">Add to Cart</button>
                 `;
@@ -28,6 +28,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     addToCart(product);
                     addToCartButton.textContent = 'In Cart';
                     addToCartButton.disabled = true;
+                });
+
+                // Add click event to images to open modal
+                const images = productDiv.querySelectorAll('.image-container img');
+                images.forEach(image => {
+                    image.addEventListener('click', () => {
+                        openModal(image.src);
+                    });
                 });
             });
         })
@@ -93,4 +101,24 @@ document.addEventListener('DOMContentLoaded', () => {
         var cart = document.getElementById('cart');
         cart.classList.toggle('open');
     });
+
+    // Modal functionality
+    const modal = document.getElementById('image-modal');
+    const modalImage = document.getElementById('modal-image');
+    const closeModal = document.getElementsByClassName('close')[0];
+
+    function openModal(src) {
+        modal.style.display = 'block';
+        modalImage.src = src;
+    }
+
+    closeModal.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    }
 });
