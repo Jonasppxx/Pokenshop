@@ -1,7 +1,7 @@
 import os
 from PIL import Image, ExifTags
 
-def resize_image(image_path, output_path, target_size_kb=1024):
+def resize_image(image_path, output_path, target_width=500):
     with Image.open(image_path) as img:
         # Correct orientation based on EXIF data
         try:
@@ -21,17 +21,15 @@ def resize_image(image_path, output_path, target_size_kb=1024):
             # Cases: image don't have getexif
             pass
 
-        # Initial quality setting
-        quality = 95
-        while True:
-            # Save the image with the current quality setting
-            img.save(output_path, quality=quality)
-            # Check the file size
-            size_kb = os.path.getsize(output_path) / 1024
-            if size_kb <= target_size_kb or quality <= 10:
-                break
-            # Reduce the quality for the next iteration
-            quality -= 5
+        # Calculate the new height to maintain the aspect ratio
+        aspect_ratio = img.height / img.width
+        new_height = int(target_width * aspect_ratio)
+
+        # Resize the image
+        img = img.resize((target_width, new_height), Image.Resampling.LANCZOS)
+
+        # Save the resized image
+        img.save(output_path)
 
 def process_images(input_folder):
     for root, _, files in os.walk(input_folder):
