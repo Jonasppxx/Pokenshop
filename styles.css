@@ -1,3 +1,12 @@
+/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* Farben */
+:root {
+    --background-color: #BDC3C7; /* Helleres Grau für den Hintergrund */
+    --accent-color: #78A1BB; /* Matte Blau für Akzente */
+}
+
 /* Reset */
 * {
     margin: 0;
@@ -7,9 +16,9 @@
 
 /* Body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background-color);
+    color: #000; /* Standard Textfarbe */
     padding: 20px;
 }
 
@@ -24,7 +33,6 @@ body {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
     animation: fadeIn 0.5s; /* Add fade-in animation */
 }
@@ -42,7 +50,7 @@ body {
     top: 15px;
     left: 35px; /* Changed from right to left */
     color: #fff;
-    font-size: 40px;
+    font-size: 35px; /* Reduced font size */
     font-weight: bold;
     transition: 0.3s;
 }
@@ -73,19 +81,9 @@ body {
 }
 
 #main-content h1 {
-    font-size: 2em;
+    font-size: 2em; /* Reduced font size */
     margin-bottom: 10px;
-}
-
-/* Main Content */
-#main-content {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-#main-content h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
+    color: #000; /* Standard Textfarbe */
 }
 
 #products {
@@ -97,7 +95,7 @@ body {
 }
 
 .product {
-    background-color: #fff;
+    background-color: #fff; /* Weiß für Boxen */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -126,47 +124,48 @@ body {
 }
 
 .product h2 {
-    font-size: 1.5em;
+    font-size: 1.5em; /* Reduced font size */
     margin-bottom: 10px;
-    color: #333;
+    color: #000; /* Schwarz für Text auf Boxen */
 }
 
 .product p {
-    font-size: 1em;
+    font-size: 1em; /* Reduced font size */
     margin-bottom: 10px;
-    color: #666;
+    color: #000; /* Schwarz für Text auf Boxen */
 }
 
 .add-to-cart {
-    background-color: #007bff;
-    color: white;
+    background-color: var(--accent-color); /* Akzentfarbe für Schaltflächen */
+    color: #fff; /* Weiß für Text */
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1em; /* Reduced font size */
     font-weight: 500;
+    margin-top: 10px; /* Added margin */
     transition: background-color 0.3s ease;
 }
 
 .add-to-cart:hover {
-    background-color: #0056b3;
+    background-color: #000; /* Schwarz für Hover-Effekt */
 }
 
 /* Cart Icon */
 #cart-icon {
-    font-size: 2.5em;
+    font-size: 2.5em; /* Reduced font size */
     position: fixed;
     top: 20px;
     right: 20px;
     cursor: pointer;
     z-index: 1000;
-    color: #007bff;
+    color: var(--accent-color); /* Akzentfarbe für Warenkorb */
     transition: color 0.3s ease;
 }
 
 #cart-icon:hover {
-    color: #0056b3;
+    color: #000; /* Schwarz für Hover-Effekt */
 }
 
 /* Cart Notification */
@@ -174,11 +173,11 @@ body {
     position: fixed;
     top: 20px;
     right: 80px;
-    background-color: #28a745;
-    color: white;
+    background-color: var(--accent-color); /* Akzentfarbe für Benachrichtigungen */
+    color: #fff; /* Weiß für Text */
     padding: 10px 20px;
     border-radius: 5px;
-    font-size: 1em;
+    font-size: 1em; /* Reduced font size */
     font-weight: 500;
     display: none;
     z-index: 1000;
@@ -186,7 +185,7 @@ body {
 
 /* Cart */
 #cart {
-    background-color: #fff;
+    background-color: #fff; /* Weiß für Warenkorb */
     padding: 32px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -204,67 +203,68 @@ body {
 }
 
 #cart h2 {
-    font-size: 1.5em;
+    font-size: 1.5em; /* Reduced font size */
     margin: 20px 0;
     font-weight: 500;
+    color: #000; /* Schwarz für Überschriften */
 }
 
 #cart-items li {
     margin: 15px 0;
-    color: #666;
+    color: #000; /* Standard Textfarbe */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1em;
+    font-size: 1em; /* Reduced font size */
 }
 
 #cart-items button {
-    background-color: #dc3545;
-    color: white;
+    background-color: var(--accent-color); /* Akzentfarbe für Schaltflächen */
+    color: #fff; /* Weiß für Text */
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 0.9em;
+    font-size: 0.9em; /* Reduced font size */
     font-weight: 500;
     transition: background-color 0.3s ease;
 }
 
 #cart-items button:hover {
-    background-color: #c82333;
+    background-color: #000; /* Schwarz für Hover-Effekt */
 }
 
 #cart-total {
     font-weight: bold;
-    color: #333;
-    font-size: 1.2em;
+    color: #000; /* Schwarz für Gesamtbetrag */
+    font-size: 1.2em; /* Reduced font size */
     margin-top: 20px;
 }
 
 #checkout-button {
-    background-color: #007bff;
-    color: white;
+    background-color: var(--accent-color); /* Akzentfarbe für Schaltflächen */
+    color: #fff; /* Weiß für Text */
     border: none;
     padding: 15px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1em; /* Reduced font size */
     font-weight: 500;
     margin-top: 20px;
     transition: background-color 0.3s ease;
 }
 
+#checkout-button:hover {
+    background-color: #000; /* Schwarz für Hover-Effekt */
+}
+
 /* Impressum */
 #impressum {
     padding: 20px;
-    background-color: #f1f1f1;
+    background-color: var(--background-color);
     border-top: 1px solid #ddd;
     margin-top: 20px;
     text-align: center; /* Zentriert den Text */
-}
-
-#checkout-button:hover {
-    background-color: #0056b3;
 }
 
 /* Payment Instructions */
@@ -273,8 +273,9 @@ body {
 }
 
 #payment-instructions h2 {
-    font-size: 1.2em;
+    font-size: 1.2em; /* Reduced font size */
     margin-bottom: 10px;
+    color: #000; /* Schwarz für Überschriften */
 }
 
 #payment-instructions ol {
@@ -283,11 +284,15 @@ body {
 
 #payment-instructions li {
     margin-bottom: 10px;
+    font-size: 1em; /* Reduced font size */
+    color: #000; /* Standard Textfarbe */
 }
 
 #payment-instructions strong {
     display: block;
     margin-bottom: 10px;
+    font-size: 1em; /* Reduced font size */
+    color: #000; /* Standard Textfarbe */
 }
 
 #payment-instructions iframe {
