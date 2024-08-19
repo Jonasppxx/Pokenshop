@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Artikel</title>
+    <style>
+        /* Import Poppins font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9; /* Hintergrundfarbe geändert */
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Main Content */
+        #main-content {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #main-content h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        #articles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .article.large {
+            grid-column: span 5;
+        }
+
+        .article.medium {
+            grid-column: span 2;
+        }
+
+        .article.small {
+            grid-column: span 1;
+        }
+
+        .article {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .article:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .article .image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .article img {
+            width: 100px; /* Adjust the width as needed */
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .article h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .article p {
+            font-size: 1em;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        /* Impressum */
+        #impressum {
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+            text-align: center; /* Zentriert den Text */
+        }
+    </style>
+</head>
+<body>
+    <div id="main-content">
+        <h1>Home</h1>
+        <div id="articles" class="grid-container">
+
+            <div class="article large">
+                <div class="image-container">
+
+
+                </div>
+                <h2>Schaue bei meinen Produkten vorbei</h2>
+                <p>Viele Produkte findest du <a href="index.html">hier</a>.</p>
+            </div>
+
+            <div class="article medium">
+                <h2>Ricardo</h2>
+                <p>Schaue doch auch einmal auf meinem <a href="https://www.ricardo.ch/de/shop/J0B0/offers/">Ricardo</a> vorbei.</p>
+            </div>
+
+            <div class="article small">
+                <div class="image-container">
+                    <img src="path/to/image3.jpg" alt="Artikel 3">
+                </div>
+                <h2>Artikel 3</h2>
+                <p>Beschreibung des Artikels 3.</p>
+            </div>
+            <!-- Weitere Artikel hier -->
+        </div>
+
+    </div>
+    <footer>
+        <div id="impressum">
+            <h2>Impressum</h2>
+            <p>Pokémon Shop</p>
+            <p>Inhaber: <a href="about.html">Jonas Boos</a></p> <!-- Link zur About Me Seite -->
+            <p>Adresse: Bern, Schweiz</p>
+            <p>Kontakt: Jonasboos38@gmail.com</p>
+            <p><a href="home.html">Home</a></p>
+            <p style="font-size: 0.8em;">Wir übernehmen keine Haftung für die Richtigkeit, Vollständigkeit und Aktualität der auf dieser Webseite bereitgestellten Inhalte sowie für eventuelle Schäden, die aus der Nutzung dieser Informationen entstehen.</p>        </div>
+    </footer>
+</body>
+</html>
