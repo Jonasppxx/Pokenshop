@@ -1,11 +1,5 @@
-/* Import Montserrat font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-
-/* Farben */
-:root {
-    --background-color: #BDC3C7; /* Helleres Grau für den Hintergrund */
-    --accent-color: #3189c0; /* Matte Blau für Akzente */
-}
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /* Reset */
 * {
@@ -16,9 +10,9 @@
 
 /* Body */
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--background-color);
-    color: #000; /* Standard Textfarbe */
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9; /* Hintergrundfarbe geändert */
+    color: #333;
     padding: 20px;
 }
 
@@ -33,6 +27,7 @@ body {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
     animation: fadeIn 0.5s; /* Add fade-in animation */
 }
@@ -50,7 +45,7 @@ body {
     top: 15px;
     left: 35px; /* Changed from right to left */
     color: #fff;
-    font-size: 35px; /* Reduced font size */
+    font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
 }
@@ -81,9 +76,8 @@ body {
 }
 
 #main-content h1 {
-    font-size: 2em; /* Reduced font size */
+    font-size: 2em;
     margin-bottom: 10px;
-    color: #000; /* Standard Textfarbe */
 }
 
 #products {
@@ -95,7 +89,7 @@ body {
 }
 
 .product {
-    background-color: #fff; /* Weiß für Boxen */
+    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -124,48 +118,47 @@ body {
 }
 
 .product h2 {
-    font-size: 1.5em; /* Reduced font size */
+    font-size: 1.5em;
     margin-bottom: 10px;
-    color: #000; /* Schwarz für Text auf Boxen */
+    color: #333;
 }
 
 .product p {
-    font-size: 1em; /* Reduced font size */
+    font-size: 1em;
     margin-bottom: 10px;
-    color: #000; /* Schwarz für Text auf Boxen */
+    color: #666;
 }
 
 .add-to-cart {
-    background-color: var(--accent-color); /* Akzentfarbe für Schaltflächen */
-    color: #fff; /* Weiß für Text */
+    background-color: #78A1BB; /* Button-Farbe geändert */
+    color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1em; /* Reduced font size */
+    font-size: 1em;
     font-weight: 500;
-    margin-top: 10px; /* Added margin */
     transition: background-color 0.3s ease;
 }
 
 .add-to-cart:hover {
-    background-color: #000; /* Schwarz für Hover-Effekt */
+    background-color: #2C3E50; /* Hover-Farbe geändert */
 }
 
 /* Cart Icon */
 #cart-icon {
-    font-size: 2.5em; /* Reduced font size */
+    font-size: 2.5em;
     position: fixed;
     top: 20px;
     right: 20px;
     cursor: pointer;
     z-index: 1000;
-    color: var(--accent-color); /* Akzentfarbe für Warenkorb */
+    color: #78A1BB; /* Warenkorb-Symbol-Farbe geändert */
     transition: color 0.3s ease;
 }
 
 #cart-icon:hover {
-    color: #000; /* Schwarz für Hover-Effekt */
+    color: #2C3E50; /* Hover-Farbe geändert */
 }
 
 /* Cart Notification */
@@ -173,11 +166,11 @@ body {
     position: fixed;
     top: 20px;
     right: 80px;
-    background-color: var(--accent-color); /* Akzentfarbe für Benachrichtigungen */
-    color: #fff; /* Weiß für Text */
+    background-color: #28a745;
+    color: white;
     padding: 10px 20px;
     border-radius: 5px;
-    font-size: 1em; /* Reduced font size */
+    font-size: 1em;
     font-weight: 500;
     display: none;
     z-index: 1000;
@@ -185,7 +178,7 @@ body {
 
 /* Cart */
 #cart {
-    background-color: #fff; /* Weiß für Warenkorb */
+    background-color: #fff;
     padding: 32px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -203,65 +196,64 @@ body {
 }
 
 #cart h2 {
-    font-size: 1.5em; /* Reduced font size */
+    font-size: 1.5em;
     margin: 20px 0;
     font-weight: 500;
-    color: #000; /* Schwarz für Überschriften */
 }
 
 #cart-items li {
     margin: 15px 0;
-    color: #000; /* Standard Textfarbe */
+    color: #666;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1em; /* Reduced font size */
+    font-size: 1em;
 }
 
 #cart-items button {
-    background-color: var(--accent-color); /* Akzentfarbe für Schaltflächen */
-    color: #fff; /* Weiß für Text */
+    background-color: #dc3545;
+    color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 0.9em; /* Reduced font size */
+    font-size: 0.9em;
     font-weight: 500;
     transition: background-color 0.3s ease;
 }
 
 #cart-items button:hover {
-    background-color: #000; /* Schwarz für Hover-Effekt */
+    background-color: #c82333;
 }
 
 #cart-total {
     font-weight: bold;
-    color: #000; /* Schwarz für Gesamtbetrag */
-    font-size: 1.2em; /* Reduced font size */
+    color: #333;
+    font-size: 1.2em;
     margin-top: 20px;
 }
 
 #checkout-button {
-    background-color: var(--accent-color); /* Akzentfarbe für Schaltflächen */
-    color: #fff; /* Weiß für Text */
+    background-color: #78A1BB; /* Button-Farbe geändert */
+    color: white;
     border: none;
     padding: 15px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1em; /* Reduced font size */
+    font-size: 1em;
     font-weight: 500;
     margin-top: 20px;
     transition: background-color 0.3s ease;
 }
 
 #checkout-button:hover {
-    background-color: #000; /* Schwarz für Hover-Effekt */
+    background-color: #2C3E50; /* Hover-Farbe geändert */
 }
 
 /* Impressum */
 #impressum {
     padding: 20px;
-    background-color: var(--background-color);
+    background-color: #f1f1f1;
     border-top: 1px solid #ddd;
     margin-top: 20px;
     text-align: center; /* Zentriert den Text */
@@ -273,9 +265,8 @@ body {
 }
 
 #payment-instructions h2 {
-    font-size: 1.2em; /* Reduced font size */
+    font-size: 1.2em;
     margin-bottom: 10px;
-    color: #000; /* Schwarz für Überschriften */
 }
 
 #payment-instructions ol {
@@ -284,15 +275,11 @@ body {
 
 #payment-instructions li {
     margin-bottom: 10px;
-    font-size: 1em; /* Reduced font size */
-    color: #000; /* Standard Textfarbe */
 }
 
 #payment-instructions strong {
     display: block;
     margin-bottom: 10px;
-    font-size: 1em; /* Reduced font size */
-    color: #000; /* Standard Textfarbe */
 }
 
 #payment-instructions iframe {
