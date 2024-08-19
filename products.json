@@ -3,42 +3,42 @@
         {
             "name": "tinkatuff-217",
             "set": "pokemon-paldea-evolved",
-            "price": 7.41,
+            "price": 9.0,
             "image": "images/tinkatuff-217/IMG_0308 2024-08-09 12_20_15.JPG",
             "hoverImage": "images/tinkatuff-217/IMG_0309 2024-08-09 12_20_16.JPG"
         },
         {
             "name": "m-venusaur-ex-2",
             "set": "pokemon-evolutions",
-            "price": 6.0,
+            "price": 7.7,
             "image": "images/m-venusaur-ex-2/IMG_0310 2024-08-09 12_21_55.JPG",
             "hoverImage": "images/m-venusaur-ex-2/IMG_0311 2024-08-09 12_21_56.JPG"
         },
         {
             "name": "thundurus-ex-38",
             "set": "pokemon-plasma-freeze",
-            "price": 5.4,
+            "price": 7.1,
             "image": "images/thundurus-ex-38/IMG_0312 2024-08-09 12_21_57.JPG",
             "hoverImage": "images/thundurus-ex-38/IMG_0313 2024-08-09 12_21_57.JPG"
         },
         {
             "name": "slowbro-ex-26",
             "set": "pokemon-evolutions",
-            "price": 1.59,
+            "price": 3.6,
             "image": "images/slowbro-ex-26/IMG_0314 2024-08-09 12_21_58.JPG",
             "hoverImage": "images/slowbro-ex-26/IMG_0315 2024-08-09 12_21_58.JPG"
         },
         {
             "name": "glimmora-ex-213",
             "set": "pokemon-obsidian-flames",
-            "price": 2.13,
+            "price": 3.85,
             "image": "images/glimmora-ex-213/IMG_0316 2024-08-09 12_21_58.JPG",
             "hoverImage": "images/glimmora-ex-213/IMG_0317 2024-08-09 12_21_59.JPG"
         },
         {
             "name": "pidgeot-ex-225",
             "set": "pokemon-obsidian-flames",
-            "price": 10.41,
+            "price": 10.7,
             "image": "images/pidgeot-ex-225/IMG_0318 2024-08-09 12_21_59.JPG",
             "hoverImage": "images/pidgeot-ex-225/IMG_0319 2024-08-09 12_22_00.JPG"
         },
@@ -52,42 +52,42 @@
         {
             "name": "mr-mime-179",
             "set": "pokemon-scarlet-&-violet-151",
-            "price": 5.99,
+            "price": 7.7,
             "image": "images/mr-mime-179/IMG_0324 2024-08-12 15_08_33.JPG",
             "hoverImage": "images/mr-mime-179/IMG_0325 2024-08-17 08_54_03.JPG"
         },
         {
             "name": "echoing-horn-225",
             "set": "pokemon-chilling-reign",
-            "price": 3.5,
+            "price": 5.2,
             "image": "images/echoing-horn-225/IMG_0328 2024-08-12 15_08_57.JPG",
             "hoverImage": "images/echoing-horn-225/IMG_0329 2024-08-12 15_08_58.JPG"
         },
         {
             "name": "swablu-213",
             "set": "pokemon-paradox-rift",
-            "price": 4.82,
+            "price": 6.1,
             "image": "images/swablu-213/IMG_0332 2024-08-12 15_08_30.JPG",
             "hoverImage": "images/swablu-213/IMG_0333 2024-08-12 15_08_58.JPG"
         },
         {
             "name": "choice-band-162",
             "set": "pokemon-burning-shadows",
-            "price": 3.77,
+            "price": 5.45,
             "image": "images/choice-band-162/IMG_0336 2024-08-12 15_09_00.JPG",
             "hoverImage": "images/choice-band-162/IMG_0337 2024-08-12 15_09_00.JPG"
         },
         {
             "name": "scizor-ex-119",
             "set": "pokemon-breakpoint",
-            "price": 8.0,
+            "price": 10.1,
             "image": "images/scizor-ex-119/IMG_0340 2024-08-12 15_13_35.JPG",
             "hoverImage": "images/scizor-ex-119/IMG_0342 2024-08-12 15_13_50.JPG"
         },
         {
             "name": "meloetta-ex-rc25",
             "set": "pokemon-legendary-treasures",
-            "price": 7.72,
+            "price": 8.7,
             "image": "images/meloetta-ex-rc25/IMG_0330 2024-08-12 15_08_58.JPG",
             "hoverImage": "images/meloetta-ex-rc25/IMG_0331 2024-08-11 12_28_31.JPG"
         }

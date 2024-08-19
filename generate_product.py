@@ -26,6 +26,9 @@ def extract_price(html):
         return float(price)
     return None
 
+def round_price(price):
+    return round(price * 20) / 20  # Round to the nearest 0.05
+
 def extract_images(name):
     image_dir = f"C:/Users/jonas/OneDrive/Desktop/GITHUB/Pokemonshop/images/{name}"
     images = []
@@ -69,6 +72,9 @@ def main():
             name, set_name = parse_url(url)
             html_content = fetch_url_content(url)
             price = extract_price(html_content)
+            if price is not None:
+                price += 1.70  # Add 1.70 to the extracted price
+                price = round_price(price)  # Round to the nearest 0.05
             image, hover_image = extract_images(name)
             
             # Create directory for the product images if it doesn't exist
