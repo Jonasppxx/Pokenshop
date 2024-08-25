@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Pokémon Shop</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         /* Allgemeine Stile */
         body {
@@ -14,10 +13,25 @@
             padding: 0;
         }
 
+        .box a button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #78A1BB;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .box a button:hover {
+            background-color: #0056b3;
+        }
+
         /* Box-Stile */
         .box-container {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
             padding: 20px;
         }
@@ -40,8 +54,9 @@
         }
 
         .box img {
-            width: 150px; /* Bildbreite */
-            height: auto; /* Höhe automatisch anpassen */
+            width: 100%;
+            max-width: 150px;
+            height: auto;
             border-radius: 5px;
             margin-bottom: 10px;
         }
@@ -58,17 +73,6 @@
             line-height: 1.5;
         }
 
-        .box.medium {
-            flex-direction: row;
-            align-items: flex-start;
-            text-align: left;
-        }
-
-        .box.medium img {
-            margin-right: 20px;
-            margin-bottom: 0;
-        }
-
         .box a {
             text-decoration: none;
             color: inherit;
@@ -77,7 +81,37 @@
         .box a:hover {
             color: #007BFF;
         }
+
+        .box.horizontal {
+            flex-direction: row;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .box.horizontal img {
+            margin-right: 20px;
+            margin-bottom: 0;
+        }
+
+        .box.horizontal div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .box.small {
+            height: 200px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .box.small p {
+            font-size: 0.9em;
+        }
     </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Menü -->
@@ -90,30 +124,39 @@
     <div id="main-content">
         <!-- Box-Container -->
         <div class="box-container">
-            <div class="box small">
+            <div class="box">
                 <a href="https://www.ricardo.ch/de/shop/J0B0/offers/" target="_blank">
                     <img src="images/Ricardo_Logo.png" alt="Ricardo Logo">
                     <h2>Besuchen Sie meinen Ricardo-Shop</h2>
                     <p>Entdecken Sie tolle Angebote auf meiner Ricardo-Seite!</p>
                 </a>
             </div>
-            <div class="box small">
-                <img src="images/artikel2.jpg" alt="Artikel 2">
-                <h2>Artikel 2</h2>
-                <p>Beschreibung von Artikel 2.</p>
+            <div class="box">
+                <a href="product_pages/mr-mime-179.html">
+                    <br>
+                    <h2>Produkt ansehen</h2>
+                    <p>Sehen Sie sich dieses Produkt im Online-Shop an. Es gibt noch viele weitere tolle Angebote!</p>
+                    <button>Jetzt ansehen</button>
+                </a>
             </div>
-            <div class="box medium">
+
+            <div class="box small">
+                <a href="products.html">
+                    <h2>Unsere Produkte</h2>
+                    <p>Entdecken Sie unsere große Auswahl an Pokémon-Produkten. Besuchen Sie unsere Produktseite für mehr Informationen und Angebote!</p>
+                    <button>Mehr erfahren</button>
+                </a>
+            </div>
+            <div class="box">
                 <a href="https://www.ricardo.ch/de/a/pokemon-roaring-moon-ex-251-182-1266060860/" target="_blank">
                     <img src="images/pokemon-roaring-moon-ex-251182.jpeg" alt="Pokémon Roaring Moon ex">
-                    <div>
-                        <h2>Pokémon Roaring Moon ex</h2>
-                        <p>Expansion: Scarlet & Violet SV04 - Paradox Rift</p>
-                        <p>Karten Typ: Pokémon - Basic</p>
-                        <p>Rarität: selten, besondere Illustration</p>
-                        <p>Sprache: Englisch</p>
-                        <p>Zustand: Near Mint</p>
-                        <p>Kaufen Sie diese tolle Karte auf <strong>Ricardo</strong>!</p>
-                    </div>
+                    <h2>Pokémon Roaring Moon ex</h2>
+                    <p>Expansion: Scarlet & Violet SV04 - Paradox Rift</p>
+                    <p>Karten Typ: Pokémon - Basic</p>
+                    <p>Rarität: selten, besondere Illustration</p>
+                    <p>Sprache: Englisch</p>
+                    <p>Zustand: Near Mint</p>
+                    <p>Kaufen Sie diese tolle Karte auf <strong>Ricardo</strong>!</p>
                 </a>
             </div>
         </div>
