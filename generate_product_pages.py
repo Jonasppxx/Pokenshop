@@ -118,7 +118,7 @@ product_page_template = """
                 <p>Set: {set}</p>
             </div>
         </div>
-        <a href="../index.html">Back to Shop</a>
+        <a href="../products.html">Back to Shop</a>
     </div>
 </body>
 </html>

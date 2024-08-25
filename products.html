@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<body>
+    <!-- Menü -->
+    <div id="menu">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Me</a>
+    </div>
+
+    <div id="main-content">
+        <div id="products"></div>
+    </div>
+
+    <div id="cart-icon"><i class="fas fa-shopping-cart"></i></div> <!-- Modern Cart Icon -->
+    <div id="cart-notification">Saved in cart</div> <!-- Notification Element -->
+
+    <div id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: CHF<span id="cart-total">0.00</span></p>
+        
+        <div id="payment-instructions">
+            <h2>Zahlungsanweisungen</h2> 
+            <ol>
+                <li>Schreiben Sie die Kontaktangeben in das untere Formular</li>
+                <li>Drücken Sie auf Absenden</li>
+                <li>Die Produkte werden sicher verschickt und in den nächsten Tagen zugestellt</li>
+            </ol>
+            <p><strong>Versand nur in der Schweiz</strong></p>
+            <p><strong>Bezahlung via Twint</strong></p>
+            <iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=6NZsLg17KEurNa7HAwGF5aEDr-8ecudHh4Vh9A6NVnhUNUhERDI5VlhZN0lOMkkwOEtBMDZZSTFZVi4u&embed=true" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="impressum">
+        <h2>Impressum</h2>
+        <p>Pokémon Shop</p>
+        <p>Inhaber: <a href="about.html">Jonas Boos</a></p> <!-- Link zur About Me Seite -->
+        <p>Adresse: Bern, Schweiz</p>
+        <p>Kontakt: Jonasboos38@gmail.com</p>
+        <p style="font-size: 0.8em; color: #666;">Wir übernehmen keine Haftung für die Richtigkeit, Vollständigkeit und Aktualität der auf dieser Webseite bereitgestellten Inhalte sowie für eventuelle Schäden, die aus der Nutzung dieser Informationen entstehen.</p>
+    </div>
+
+    <!-- Modal -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

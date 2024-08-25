@@ -14,6 +14,28 @@ body {
     background-color: #f4f4f9; /* Hintergrundfarbe geändert */
     color: #333;
     padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menü-Stile */
+#menu {
+    background-color: #2C3E50;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+#menu a:hover {
+    color: #78A1BB;
 }
 
 /* Modal styles */
@@ -156,7 +178,7 @@ body {
 #cart-icon {
     font-size: 2.5em;
     position: fixed;
-    top: 20px;
+    top: 50px;
     right: 20px;
     cursor: pointer;
     z-index: 1000;
