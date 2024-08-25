@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <img src="${product.image}" alt="${product.name}" class="default-image">
                         <img src="${product.hoverImage}" alt="${product.name}" class="hover-image">
                     </div>
-                    <h2>${product.name}</h2>
+                    <h2><a href="product_pages/${product.name}.html">${product.name}</a></h2>
                     <p class="product-price">Price: CHF${product.price}</p>
                     <p>${product.set}</p>
                     <button class="add-to-cart" data-name="${product.name}">Add to Cart</button>

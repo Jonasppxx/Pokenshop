@@ -97,6 +97,13 @@ body {
     box-sizing: border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    text-decoration: none; /* Text nicht unterstrichen */
+    color: inherit; /* Textfarbe erben */
+}
+
+.product a {
+    text-decoration: none; /* Text nicht unterstrichen */
+    color: inherit; /* Textfarbe erben */
 }
 
 .product:hover {
